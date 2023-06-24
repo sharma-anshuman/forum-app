@@ -1,9 +1,12 @@
 import React from "react";
+import ForumMain from "./forum-app/ForumMain";
 
 function App() {
-  return <React.Fragment>
-    <h1>Hello there</h1>
-  </React.Fragment>;
+  return (
+    <React.Fragment>
+      <ForumMain />
+    </React.Fragment>
+  );
 }
 
 export default App;
