@@ -52,7 +52,7 @@ const SinglePost = ({ item }) => {
 
   return (
     <div className="flex shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-      <div className="p-1 pt-4 flex flex-col items-center basis-3/12">
+      <div className="p-1 pt-4 flex flex-col items-center basis-1/12">
         <div
           className={`text-xl cursor-pointer ${flagup ? "text-blue-500" : ""}`}
           onClick={upvoteHandler}
@@ -69,7 +69,7 @@ const SinglePost = ({ item }) => {
           <FontAwesomeIcon icon={faArrowAltCircleDown} />
         </div>
       </div>
-      <div className="z-10 flex flex-col">
+      <div className="z-10 flex flex-col basis-11/12">
         <div className="flex p-3 flex-col gap-1">
           <div className="flex justify-between">
             <div className="flex gap-2">
