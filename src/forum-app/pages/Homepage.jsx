@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import SideNavbar from "../components/SideNavbar";
 import { UseForum } from "../context/ForumContext";
 import SinglePost from "../components/SinglePost";
+import ProfileSnippet from "../components/ProfileSnippet";
 
 const Homepage = () => {
   const { ForumObj, dispatch } = UseForum();
@@ -18,7 +19,7 @@ const Homepage = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="flex justify-between">
+      <div className="flex justify-between relative">
         <div className="basis-3/12">
           <SideNavbar />
         </div>
@@ -38,6 +39,9 @@ const Homepage = () => {
             <option value="latest">Latest Posts</option>
             <option value="upvotes">Most upvotes</option>
           </select>
+        </div>
+        <div className="top-0 right-0">
+          <ProfileSnippet />
         </div>
       </div>
     </React.Fragment>
